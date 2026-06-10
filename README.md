@@ -76,7 +76,4 @@ Open your browser and navigate to: **[http://localhost:8000](http://localhost:80
 
 This application is a **demonstration** and is not HIPAA-compliant in its current state. Do not use real patient data in this environment. The instructions in `agent.py` enforce professional communication standards and privacy protocols for the AI's behavior.
 
-## 📄 License
 
-[Insert License Information]
-# google-adk-voice-agent
