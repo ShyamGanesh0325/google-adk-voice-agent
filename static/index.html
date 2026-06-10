@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADK Voice Agent</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="/static/js/app.js" type="module"></script>
+</head>
+
+<body>
+  <div id="main-container">
+    <h1>ADK Voice Agent</h1>
+    <div id="status-message">Connection opened</div>
+
+    <div id="visualizer-container">
+      <canvas id="visualizer"></canvas>
+    </div>
+
+    <div id="messages">
+      <!-- Messages will appear here -->
+    </div>
+
+    <div id="controls">
+      <button id="micButton" aria-label="Toggle Microphone">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" />
+          <path
+            d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" />
+        </svg>
+      </button>
+
+      <form id="messageForm">
+        <input type="text" id="message" name="message" placeholder="Type a message..." autocomplete="off" />
+        <button type="submit" id="sendButton" disabled>
+          <svg style="width:20px;height:20px;fill:currentColor" viewBox="0 0 24 24">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Hidden video element to maintain existing logic if needed -->
+  <video id="videoElement" autoplay muted style="display:none;"></video>
+</body>
+
+</html>
