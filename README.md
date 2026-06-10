@@ -22,6 +22,16 @@ A real-time, multimodal healthcare assistant powered by **Google Gemini 3.1 Flas
 - **`db.py`**: Database layer managing a SQLite instance (`clinical_assistant.db`) with sample patient data.
 - **`static/`**: Frontend assets including HTML, CSS, and modular JavaScript for audio recording/playback and visualization.
 
+## Agent Workflow
+
+1. User provides voice input.
+2. Audio is processed.
+3. Google ADK agent receives the request.
+4. The healthcare assistant reasons about the query.
+5. Relevant information is retrieved.
+6. Response is generated.
+7. Audio response is played back.
+
 ## 📋 Prerequisites
 
 - **Python 3.12+**
